@@ -29,7 +29,9 @@ const (
 	// These FeeTiers are used in other dexes such as BaseSwapV3, ArbiDexV3.
 	Fee1    FeeAmount = 1
 	Fee80   FeeAmount = 80
+	Fee350  FeeAmount = 350
 	Fee450  FeeAmount = 450
+	Fee750  FeeAmount = 750
 	Fee2500 FeeAmount = 2500
 
 	FeeMax FeeAmount = 1000000
@@ -42,9 +44,11 @@ var TickSpacings = map[FeeAmount]int{
 	FeeLowest: 1,
 	Fee200:    4,
 	Fee300:    6,
+	Fee350:    10,
 	Fee400:    8,
 	FeeLow:    10,
 	Fee450:    10,
+	Fee750:    15,
 	FeeMedium: 60,
 	Fee2500:   60,
 	FeeHigh:   200,
