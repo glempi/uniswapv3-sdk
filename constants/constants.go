@@ -27,6 +27,7 @@ const (
 	FeeHigh   FeeAmount = 10000
 
 	// These FeeTiers are used in other dexes such as BaseSwapV3, ArbiDexV3.
+	Fee1    FeeAmount = 1
 	Fee80   FeeAmount = 80
 	Fee450  FeeAmount = 450
 	Fee2500 FeeAmount = 2500
@@ -36,6 +37,7 @@ const (
 
 // The default factory tick spacings by fee amount.
 var TickSpacings = map[FeeAmount]int{
+	Fee1:      1,
 	Fee80:     1,
 	FeeLowest: 1,
 	Fee200:    4,
