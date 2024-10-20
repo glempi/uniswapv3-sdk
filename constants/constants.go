@@ -33,6 +33,7 @@ const (
 	Fee450  FeeAmount = 450
 	Fee750  FeeAmount = 750
 	Fee2500 FeeAmount = 2500
+	Fee5000 FeeAmount = 5000
 
 	FeeMax FeeAmount = 1000000
 )
@@ -51,6 +52,7 @@ var TickSpacings = map[FeeAmount]int{
 	Fee750:    15,
 	FeeMedium: 60,
 	Fee2500:   60,
+	Fee5000:   100,
 	FeeHigh:   200,
 }
 
