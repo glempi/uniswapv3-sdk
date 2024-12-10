@@ -1,6 +1,6 @@
 module github.com/KyberNetwork/uniswapv3-sdk
 
-go 1.18
+go 1.21
 
 replace github.com/daoleno/uniswapv3-sdk v0.4.0 => github.com/KyberNetwork/uniswapv3-sdk v0.4.0
 
